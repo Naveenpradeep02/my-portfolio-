@@ -135,7 +135,7 @@ const Resume = () => {
                     </div>
                   </div>
                   <div className="step">
-                    <h3>Summary</h3>
+                    {/* <h3>Summary</h3> */}
                     <div className="step-info">
                       <div className="step-box1 ">
                         <div className="box-line"></div>

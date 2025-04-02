@@ -47,7 +47,8 @@ const AboutMe = () => {
               </li>
               <li>
                 <FontAwesomeIcon icon={faChevronRight} className="about-icon" />
-                <span>Emai:</span>naveenpradeep0987@gmail.com
+                <span>Emai:</span>
+                <p className="email-text">naveenpradeep0987@gmail.com</p>
               </li>
 
               <li>

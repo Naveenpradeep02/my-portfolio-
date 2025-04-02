@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import PageIntro from "./pages/PageIntro";
 import { AnimatePresence } from "framer-motion";
+import ProjectDetial from "./pages/ProjectDetial";
 
 function App() {
   const [showIntro, setShowIntro] = useState(
@@ -41,6 +42,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/projectdetials" element={<ProjectDetial />} />
         </Routes>
       </AnimatePresence>
     </Fragment>

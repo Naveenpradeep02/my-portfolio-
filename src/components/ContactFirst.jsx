@@ -56,7 +56,9 @@ const ContactFirst = () => {
                 </div>
                 <div className="box-text">
                   <h3>Email Me</h3>
-                  <a href="">naveenpradeep0987@gmail.com</a>
+                  <a href="" className="email">
+                    naveenpradeep0987@gmail.com
+                  </a>
                 </div>
               </div>
             </a>

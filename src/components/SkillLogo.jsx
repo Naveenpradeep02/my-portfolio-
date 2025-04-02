@@ -1,19 +1,27 @@
-import React, { Fragment } from "react";
-import reactImage from "../assets/img/image 1.png";
-import jsImage from "../assets/img/image 2.png";
-import cssImage from "../assets/img/image 3.png";
-import htmlImage from "../assets/img/image 4.png";
-import tailwindImage from "../assets/img/image 5.png";
-import bootImage from "../assets/img/image 6.png";
-import mongodbImage from "../assets/img/image 7.png";
-import nodeImage from "../assets/img/image 8.png";
-import figmaImage from "../assets/img/image 9.png";
-import mysqlImage from "../assets/img/image 10.png";
-import javaImage from "../assets/img/image 11.png";
-import springImage from "../assets/img/image 12.png";
-import gitImage from "../assets/img/image 13.png";
-import canvaImage from "../assets/img/image 19.png";
-import photoImage from "../assets/img/image 20.png";
+import React, { Fragment, version } from "react";
+import reactImage from "../assets/skilllogo/reactjs-svgrepo-com.png";
+import jsImage from "../assets/skilllogo/js-svgrepo-com.png";
+import cssImage from "../assets/skilllogo/css-3-svgrepo-com.png";
+import htmlImage from "../assets/skilllogo/html-5-svgrepo-com.png";
+import tailwindImage from "../assets/skilllogo/tailwind-svgrepo-com.png";
+import bootImage from "../assets/skilllogo/bootstrap-svgrepo-com.png";
+import framerImage from "../assets/skilllogo/black-mark.png";
+import mongodbImage from "../assets/skilllogo/momgo.png";
+import nodeImage from "../assets/skilllogo/nodejs-icon-logo-svgrepo-com.png";
+import apiImage from "../assets/skilllogo/api-page-svgrepo-com.png";
+import mysqlImage from "../assets/skilllogo/mysql-logo-svgrepo-com.png";
+import javaImage from "../assets/skilllogo/java-svgrepo-com.png";
+import springImage from "../assets/skilllogo/icons8-spring-boot-100.png";
+import gitImage from "../assets/skilllogo/git-svgrepo-com.png";
+import githubImage from "../assets/skilllogo/github-142-svgrepo-com.png";
+import axiosImage from "../assets/skilllogo/favicon 1.png";
+import jwtImage from "../assets/skilllogo/1989596 1.png";
+import vercelImage from "../assets/skilllogo/vercel-fill-svgrepo-com.png";
+import vsImage from "../assets/skilllogo/vs-code-svgrepo-com.png";
+import intellijImage from "../assets/skilllogo/intellij-idea-svgrepo-com.png";
+import netlifyImage from "../assets/skilllogo/netlify-6x 2.png";
+import postmanImage from "../assets/skilllogo/postman-icon-svgrepo-com.png";
+import expressImage from "../assets/skilllogo/express-svgrepo-com (1).png";
 
 const SkillLogo = () => {
   return (
@@ -29,28 +37,28 @@ const SkillLogo = () => {
             <p>React.js</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={jsImage} alt="" />
+            <p>Java Script</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={tailwindImage} alt="" />
+            <p>Tailwind</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={htmlImage} alt="" />
+            <p>HTML</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={cssImage} alt="" />
+            <p>CSS</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={bootImage} alt="" />
+            <p>Bootstrap</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={framerImage} alt="" />
+            <p>Framer Motion</p>
           </div>
         </div>
         <div className="sub-page-title">
@@ -59,32 +67,40 @@ const SkillLogo = () => {
         </div>
         <div className="container">
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={nodeImage} alt="" />
+            <p>Node.js</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={expressImage} alt="" />
+            <p>Express.js</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={mongodbImage} alt="" />
+            <p>MongoDB</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={javaImage} alt="" />
+            <p>Java</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={mysqlImage} alt="" />
+            <p>MY SQL</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={springImage} alt="" />
+            <p>Spring Boot</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={jwtImage} alt="" />
+            <p>JWT</p>
+          </div>
+          <div className="skill-logo">
+            <img src={apiImage} alt="" />
+            <p>RESTful APIs</p>
+          </div>
+          <div className="skill-logo">
+            <img src={axiosImage} alt="" />
+            <p>Axios</p>
           </div>
         </div>
         <div className="sub-page-title">
@@ -93,32 +109,32 @@ const SkillLogo = () => {
         </div>
         <div className="container">
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={gitImage} alt="" />
+            <p>Version Control</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={vsImage} alt="" />
+            <p>VS Code</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={githubImage} alt="" />
+            <p>GitHub</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={intellijImage} alt="" />
+            <p>Intellij</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={postmanImage} alt="" />
+            <p>Postman</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={netlifyImage} alt="" />
+            <p>Netlify</p>
           </div>
           <div className="skill-logo">
-            <img src={reactImage} alt="" />
-            <p>React.js</p>
+            <img src={vercelImage} alt="" />
+            <p>Vercel</p>
           </div>
         </div>
       </div>
