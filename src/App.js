@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import "./assets/css/style.css";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Cursor from "./components/Cursor";
