@@ -49,20 +49,20 @@ const ContactFirst = () => {
             <div className="line-profile"></div>
           </div>
           <div className="contact-info">
-            <a href="">
+            <a href="#">
               <div className="contact-box">
                 <div className="box-icon">
                   <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
                 </div>
                 <div className="box-text">
                   <h3>Email Me</h3>
-                  <a href="" className="email">
+                  <a href="#" className="email">
                     naveenpradeep0987@gmail.com
                   </a>
                 </div>
               </div>
             </a>
-            <a href="">
+            <a href="#">
               <div className="contact-box">
                 <div className="box-icon">
                   <FontAwesomeIcon
@@ -72,11 +72,11 @@ const ContactFirst = () => {
                 </div>
                 <div className="box-text">
                   <h3>Call Me</h3>
-                  <a href="">8870686660</a>
+                  <a href="#">8870686660</a>
                 </div>
               </div>
             </a>
-            <a href="">
+            <a href="#">
               <div className="contact-box">
                 <div className="box-icon">
                   <FontAwesomeIcon icon={faShareAlt} className="contact-icon" />
@@ -84,13 +84,13 @@ const ContactFirst = () => {
                 <div className="box-text">
                   <h3>Social Profiles</h3>
                   <div className="contact-social">
-                    <a href="">
+                    <a href="#">
                       <FontAwesomeIcon
                         icon={faLinkedin}
                         className="social-con-icon"
                       />
                     </a>
-                    <a href="">
+                    <a href="#">
                       <FontAwesomeIcon
                         icon={faInstagram}
                         className="social-con-icon"
@@ -100,7 +100,7 @@ const ContactFirst = () => {
                 </div>
               </div>
             </a>
-            <a href="">
+            <a href="#">
               <div className="contact-box">
                 <div className="box-icon">
                   <FontAwesomeIcon
@@ -110,7 +110,7 @@ const ContactFirst = () => {
                 </div>
                 <div className="box-text">
                   <h3>My Address</h3>
-                  <a href="">Chennai</a>
+                  <a href="#">Chennai</a>
                 </div>
               </div>
             </a>
