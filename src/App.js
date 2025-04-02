@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import "./assets/css/style.css";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Cursor from "./components/Cursor";
@@ -35,15 +35,17 @@ function App() {
     <Fragment>
       <AnimatePresence>
         <Cursor />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/projectdetials" element={<ProjectDetial />} />
-        </Routes>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/projectdetials" element={<ProjectDetial />} />
+          </Routes>
+        </BrowserRouter>
       </AnimatePresence>
     </Fragment>
   );
