@@ -2,12 +2,19 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Fragment } from "react";
 import profile from "../assets/profile2.jpg";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <Fragment>
-      <div className="section1">
-        <div className="right">
+      <motion.div className="section1">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+          className="right"
+        >
           <div className="page-title">
             <h4>About</h4>
             <div className="line-profile"></div>
@@ -16,8 +23,14 @@ const AboutMe = () => {
           <div className="imgs">
             <img src={profile} alt="" />
           </div>
-        </div>
-        <div className="left">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+          className="left"
+        >
           <h3> Full Stack Developer </h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
@@ -66,8 +79,8 @@ const AboutMe = () => {
             suscipit, magnam voluptatibus dicta perspiciatis in dolores? Amet
             recusandae voluptas tempore dolor sapiente dolore porro.
           </p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </Fragment>
   );
 };

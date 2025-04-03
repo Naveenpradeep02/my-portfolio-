@@ -9,6 +9,7 @@ import {
   faShareAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 const ContactFirst = () => {
   return (
@@ -50,7 +51,13 @@ const ContactFirst = () => {
           </div>
           <div className="contact-info">
             <a href="#">
-              <div className="contact-box">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.4 }}
+                className="contact-box"
+              >
                 <div className="box-icon">
                   <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
                 </div>
@@ -60,10 +67,16 @@ const ContactFirst = () => {
                     naveenpradeep0987@gmail.com
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </a>
             <a href="#">
-              <div className="contact-box">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.4 }}
+                className="contact-box"
+              >
                 <div className="box-icon">
                   <FontAwesomeIcon
                     icon={faPhoneVolume}
@@ -74,10 +87,16 @@ const ContactFirst = () => {
                   <h3>Call Me</h3>
                   <a href="#">8870686660</a>
                 </div>
-              </div>
+              </motion.div>
             </a>
             <a href="#">
-              <div className="contact-box">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.4 }}
+                className="contact-box"
+              >
                 <div className="box-icon">
                   <FontAwesomeIcon icon={faShareAlt} className="contact-icon" />
                 </div>
@@ -98,10 +117,16 @@ const ContactFirst = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </a>
             <a href="#">
-              <div className="contact-box">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.4 }}
+                className="contact-box"
+              >
                 <div className="box-icon">
                   <FontAwesomeIcon
                     icon={faLocationDot}
@@ -112,7 +137,7 @@ const ContactFirst = () => {
                   <h3>My Address</h3>
                   <a href="#">Chennai</a>
                 </div>
-              </div>
+              </motion.div>
             </a>
           </div>
         </div>

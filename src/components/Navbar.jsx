@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const location = useLocation();
@@ -36,7 +37,13 @@ const Navbar = () => {
             )}
           </div>
           {!isHomePage && (
-            <div className="">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className=""
+            >
               <div className="nav-menu">
                 <ul>
                   <li>
@@ -70,7 +77,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
           )}
           <div className="menu-bar">
             <button className="open-menu" onClick={toggleMenu}>

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { ProjectList } from "../data/ProjectData";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -11,7 +12,13 @@ const Projects = () => {
     <Fragment>
       <div className="about">
         <div className="container">
-          <div className="about-container">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.4 }}
+            className="about-container"
+          >
             <div className="project-container">
               <div className="page-title">
                 <h4>Projects</h4>
@@ -20,7 +27,14 @@ const Projects = () => {
               <h2>My Works</h2>
               <div className="project-list">
                 {ProjectList.map((data, index) => (
-                  <div key={index.id} className="project-box">
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ duration: 0.4 }}
+                    key={index.id}
+                    className="project-box"
+                  >
                     <div className="project-img">
                       <img src={data.ProjectImage} alt="" />
                     </div>
@@ -42,11 +56,11 @@ const Projects = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Fragment>

@@ -305,6 +305,7 @@ header {
   width: 100%;
   background-color: rgba(34, 32, 32, 0.542);
   padding: 30px;
+  overflow-x: hidden;
 }
 .section1 {
   display: grid;

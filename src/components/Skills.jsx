@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -9,7 +10,13 @@ const Skills = () => {
           <div className="line-profile"></div>
         </div>
         <div className="about-skill">
-          <div className="skill1">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            className="skill1"
+          >
             <div className="skill">
               <div className="skill-name">
                 <p>React.js</p>
@@ -46,8 +53,14 @@ const Skills = () => {
                 <div className="s4"></div>
               </div>
             </div>
-          </div>
-          <div className="skill2">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            className="skill2"
+          >
             <div className="skill">
               <div className="skill-name">
                 <p>Java</p>
@@ -84,7 +97,7 @@ const Skills = () => {
                 <div className="s8"></div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Fragment>

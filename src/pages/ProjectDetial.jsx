@@ -2,6 +2,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Fragment } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ProjectDetial = () => {
   const location = useLocation();
@@ -15,7 +16,13 @@ const ProjectDetial = () => {
     <Fragment>
       <div className="about">
         <div className="container">
-          <div className="about-container">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.4 }}
+            className="about-container"
+          >
             <div className="page-title">
               <h4 className="back-btn" onClick={() => navigate("/project")}>
                 <FontAwesomeIcon icon={faArrowLeft} /> back
@@ -54,7 +61,7 @@ const ProjectDetial = () => {
                 <p>{project.projectDes}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Fragment>

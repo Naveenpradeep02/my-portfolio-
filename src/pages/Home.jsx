@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import myimg from "../assets/bg-img.png";
+import { motion } from "framer-motion";
+
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,7 +17,13 @@ const Home = () => {
     <Fragment>
       <div className="container">
         <div className="hero">
-          <div className="">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            className=""
+          >
             <div className="text-container">
               <div className="title">
                 <p>N</p>
@@ -82,10 +90,16 @@ const Home = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="img-container">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            className="img-container"
+          >
             <img src={myimg} alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </Fragment>
