@@ -25,12 +25,6 @@ const PageIntro = () => {
         </div>
       ) : (
         <motion.div className="intro-container">
-          <div className="right-intro">
-            <div className="line-intro-right"></div>
-          </div>
-          <div className="left-intro">
-            <div className="line-intro-left"></div>
-          </div>
           <motion.h3
             key="uniqueKey"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -40,6 +34,12 @@ const PageIntro = () => {
           >
             Welcome to my portfolio
           </motion.h3>
+          <div className="right-intro">
+            <div className="line-intro-right"></div>
+          </div>
+          <div className="left-intro">
+            <div className="line-intro-left"></div>
+          </div>
         </motion.div>
       )}{" "}
     </AnimatePresence>
