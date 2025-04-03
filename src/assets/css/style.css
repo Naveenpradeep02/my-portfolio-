@@ -293,13 +293,31 @@ header {
 }
 /*  */
 .about {
-  background: url(../bg-img.png) no-repeat;
+  /* background: url(../bg-img.png) no-repeat;
   background-position: center;
   background-size: contain;
   background-attachment: fixed;
   height: auto;
   min-height: 100vh;
+  padding-top: 100px; */
+  position: relative;
+  background: none; /* Remove the direct background */
+  height: auto;
+  min-height: 100vh;
   padding-top: 100px;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../bg-img.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(5px); /* Adjust the blur intensity */
+  z-index: -1;
 }
 .about-container {
   width: 100%;
@@ -330,7 +348,7 @@ header {
   background-color: var(--lavender-color);
 }
 .right h2 {
-  font-size: 36px;
+  font-size: 24px;
   color: var(--white-color);
   margin-bottom: 20px;
 }

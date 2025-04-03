@@ -33,10 +33,9 @@ const AboutMe = () => {
         >
           <h3> Full Stack Developer </h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-            omnis cupiditate sit sapiente, consequatur ipsam aperiam quae
-            repellendus corporis architecto ipsa excepturi, harum debitis iusto
-            a tempora magnam eum pariatur?
+            Hi, I'm Naveen Pradeep, a technophile who can quickly adapt to new
+            environments and technologies, Full Stack Developer from Chennai,
+            India. Currently working at D-Grow ma,
           </p>
           <div className="about-info">
             <ul>
@@ -71,13 +70,15 @@ const AboutMe = () => {
             </ul>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-            enim. Odio dolor unde ipsum iusto culpa nesciunt ipsam voluptas
-            minima, totam laborum illum veritatis consequatur voluptate non
-            dolorem atque impedit Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dolorum quia odit animi commodi, nisi deserunt
-            suscipit, magnam voluptatibus dicta perspiciatis in dolores? Amet
-            recusandae voluptas tempore dolor sapiente dolore porro.
+            I'm driven by a passion for facing and overcoming challenges. I love
+            to learn, analyze, and develop, with strengths in analysis and rapid
+            development. I also enjoy connecting with clients to discuss
+            projects and ensure their requirements are met or exceeded.
+          </p>
+          <p>
+            My career goal is to continually improve my skills while providing
+            my efficiency to contribute to my team's success. I aim to surpass
+            expectations and help drive the growth of the organization.
           </p>
         </motion.div>
       </motion.div>

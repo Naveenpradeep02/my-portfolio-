@@ -86,7 +86,7 @@ const Home = () => {
                   className="btn btn2 "
                   onClick={() => navigate("/contact")}
                 >
-                  Let's Contact
+                  Let's Connect
                 </button>
               </div>
             </div>

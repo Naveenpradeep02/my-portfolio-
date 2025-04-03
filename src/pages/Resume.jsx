@@ -19,11 +19,32 @@ const Resume = () => {
                 <h4>Resume</h4>
                 <div className="line-profile"></div>
               </div>
-              <h2>Check My Resume</h2>
+              <h2 style={{ fontSize: "28px" }}>Check My Resume</h2>
               <div className="resume-box">
                 <div className="resume-right">
                   <div className="step">
                     <h3>Summary</h3>
+                    <div className="step-info">
+                      <div className="step-box1 ">
+                        <div className="box-line"></div>
+                      </div>
+                      <motion.div
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: false, amount: 0.2 }}
+                        transition={{ duration: 0.4 }}
+                        className="step-box2"
+                      >
+                        <h4>Professional Experience</h4>
+                        <h5>D - Grow Digital Agency - Front End Developer</h5>
+                        <div className="step-btn">2025</div>
+                        <p>
+                          After my course, I joined as an Front End Developer,
+                          where I learned and honed development skills to
+                          contribute effectively to projects.
+                        </p>
+                      </motion.div>
+                    </div>
                     <div className="step-info">
                       <div className="step-box1">
                         <div className="box-line"></div>
@@ -35,20 +56,21 @@ const Resume = () => {
                         transition={{ duration: 0.4 }}
                         className="step-box2"
                       >
-                        <h4>Lorem.</h4>
-                        <p>
-                          Highly motivated Front-End Developer with hands-on
-                          experience in building dynamic and responsive web
-                          interfaces. Proficient in React.js, Vite.js, HTML,
-                          CSS, Bootstrap, and JavaScript, with a solid
-                          foundation in crafting user-friendly and visually
-                          appealing designs. Currently advancing skills through
-                          full-stack development training, specializing in
-                          Spring Boot for backend development. Passionate about
-                          coding, problem-solving, and applying technical
-                          expertise to deliver innovative and engaging web
-                          solutions.
-                        </p>
+                        <h4>Intenship</h4>
+                        <h5>Simplar Academy</h5>
+                        <div className="step-btn">2024</div>
+                        <ul>
+                          <li>
+                            I completed my full-stack development internship at
+                            Simplar Academy, working on the Inten Pro project
+                            using the MERN stack. I gained hands-on experience
+                            in building both frontend and backend applications,
+                            integrating MongoDB, Express.js, React.js, and
+                            Node.js. This opportunity helped me enhance my
+                            skills in API development, database management, and
+                            responsive UI design.
+                          </li>
+                        </ul>
                         {/* <ul>
                           <li>Lorem ipsum dolor sit amet.</li>
                           <li>Lorem ipsum dolor sit amet.</li>
@@ -109,7 +131,7 @@ const Resume = () => {
                       </motion.div>
                     </div>
                   </div>
-                  <div className="step">
+                  {/* <div className="step">
                     <div className="step-info">
                       <div className="step-box1">
                         <div className="box-line"></div>
@@ -151,7 +173,7 @@ const Resume = () => {
                         </ul>
                       </motion.div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="resume-left">
                   <div className="step-img">
@@ -184,30 +206,7 @@ const Resume = () => {
                       📜 Download Resume
                     </div>
                   </div>
-                  <div className="step">
-                    {/* <h3>Summary</h3> */}
-                    <div className="step-info">
-                      <div className="step-box1 ">
-                        <div className="box-line"></div>
-                      </div>
-                      <motion.div
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false, amount: 0.2 }}
-                        transition={{ duration: 0.4 }}
-                        className="step-box2"
-                      >
-                        <h4>Professional Experience</h4>
-                        <h5>D - Grow Digital Agency - Front End Developer</h5>
-                        <div className="step-btn">2025</div>
-                        <p>
-                          After my course, I joined as an Front End Developer,
-                          where I learned and honed development skills to
-                          contribute effectively to projects.
-                        </p>
-                      </motion.div>
-                    </div>
-                  </div>
+                  <div className="step">{/* <h3>Summary</h3> */}</div>
                 </div>
               </div>
             </div>
