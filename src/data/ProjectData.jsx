@@ -17,7 +17,7 @@ export const ProjectList = [
     tech: ["React.js", " Express.js", " MongoDB", " Node.js", "BootStrap"],
     projectDes:
       "NavCart lets you browse products, add them to your cart, and place orders effortlessly for a smooth shopping experience.",
-    projectUrl: "",
+    projectUrl: "https://github.com/Naveenpradeep02/nav-cart",
     ProjectImage: "/img/Group 40052.png",
     status: "Not live",
   },
@@ -39,7 +39,7 @@ export const ProjectList = [
     tech: ["Spring Boot", "html", "css", "js"],
     projectDes:
       "An Employee Management Dashboard is a centralized platform designed to streamline the management of employee information and HR processes. It allows HR professionals and managers to efficiently add, update, and oversee employee details within a single interface.",
-    projectUrl: "",
+    projectUrl: "https://github.com/Naveenpradeep02/EmployeeManagement",
     ProjectImage: "/img/Group 40055.png",
     status: "Not live",
   },
