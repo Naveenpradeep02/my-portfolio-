@@ -28,7 +28,7 @@ export const ProjectList = [
     tech: ["HTML", "CSS", "Js"],
     projectDes:
       "BurgerShop offers a seamless online experience for burger enthusiasts. Browse our diverse menu, customize your orders, and enjoy swift delivery—all through our user-friendly platform. Our vibrant landing page showcases mouth-watering visuals and intuitive navigation, making your burger cravings just a click away.",
-    projectUrl: "",
+    projectUrl: "https://burgersimpleui.netlify.app/",
     ProjectImage: "/img/Group 40056.png",
     status: "live",
   },
@@ -41,15 +41,16 @@ export const ProjectList = [
       "An Employee Management Dashboard is a centralized platform designed to streamline the management of employee information and HR processes. It allows HR professionals and managers to efficiently add, update, and oversee employee details within a single interface.",
     projectUrl: "",
     ProjectImage: "/img/Group 40055.png",
-    status: "live",
+    status: "Not live",
   },
   {
     id: "0005",
     projectName: "Product Slider",
     title: "Landing Page",
     tech: ["HTML", "CSS", "JS"],
-    projectDes: "",
-    projectUrl: "",
+    projectDes:
+      "A responsive product slider that showcases multiple items with smooth sliding animations using HTML, CSS, and JavaScript.The slider adapts to different screen sizes for an optimized viewing experience",
+    projectUrl: "https://productsimpleslider.netlify.app/",
     ProjectImage: "/img/Group 40054.png",
     status: "live",
   },

@@ -37,7 +37,7 @@ const Resume = () => {
                       >
                         <h4>Professional Experience</h4>
                         <h5>D - Grow Digital Agency - Front End Developer</h5>
-                        <div className="step-btn">2025</div>
+                        <div className="step-btn">2024 - 2025</div>
                         <p>
                           After my course, I joined as an Front End Developer,
                           where I learned and honed development skills to
@@ -56,7 +56,7 @@ const Resume = () => {
                         transition={{ duration: 0.4 }}
                         className="step-box2"
                       >
-                        <h4>Intenship</h4>
+                        <h4>Internship</h4>
                         <h5>Simplar Academy</h5>
                         <div className="step-btn">2024</div>
                         <ul>
@@ -71,11 +71,6 @@ const Resume = () => {
                             responsive UI design.
                           </li>
                         </ul>
-                        {/* <ul>
-                          <li>Lorem ipsum dolor sit amet.</li>
-                          <li>Lorem ipsum dolor sit amet.</li>
-                          <li>Lorem ipsum dolor sit amet.</li>
-                        </ul> */}
                       </motion.div>
                     </div>
                   </div>
