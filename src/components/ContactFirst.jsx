@@ -63,13 +63,16 @@ const ContactFirst = () => {
                 </div>
                 <div className="box-text">
                   <h3>Email Me</h3>
-                  <a href="#" className="email">
+                  <a
+                    href="mailto:naveenpradeep0987@gmail.com"
+                    className="email"
+                  >
                     naveenpradeep0987@gmail.com
                   </a>
                 </div>
               </motion.div>
             </a>
-            <a href="#">
+            <a href="tel:+918870686660">
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -103,7 +106,10 @@ const ContactFirst = () => {
                 <div className="box-text">
                   <h3>Social Profiles</h3>
                   <div className="contact-social">
-                    <a href="#">
+                    <a
+                      href="https://www.linkedin.com/in/naveenpradeep-g/"
+                      target="_blank"
+                    >
                       <FontAwesomeIcon
                         icon={faLinkedin}
                         className="social-con-icon"

@@ -56,10 +56,13 @@ const Home = () => {
                 <Link to="/resume">Resume</Link>
               </div>
               <div className="home-social-icon">
-                <a href="#">
+                <a href="https://github.com/Naveenpradeep02" target="_blank">
                   <FontAwesomeIcon icon={faGithub} className="icon " />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/naveenpradeep-g/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon icon={faLinkedin} className="icon " />
                 </a>
                 <a href="#">
