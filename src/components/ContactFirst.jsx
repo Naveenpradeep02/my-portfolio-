@@ -50,7 +50,7 @@ const ContactFirst = () => {
             <div className="line-profile"></div>
           </div>
           <div className="contact-info">
-            <a href="#">
+            <a href="mailto:naveenpradeep0987@gmail.com">
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -88,11 +88,11 @@ const ContactFirst = () => {
                 </div>
                 <div className="box-text">
                   <h3>Call Me</h3>
-                  <a href="#">8870686660</a>
+                  <a href="tel:918870686660">8870686660</a>
                 </div>
               </motion.div>
             </a>
-            <a href="#">
+            <a>
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
